@@ -56,7 +56,7 @@ collection=client.get_or_create_collection(
    name="xmlgenerator", metadata={"hnsw:space": "cosine"})
 
 
-collection.add(
+collection.upsert(
     ids=[x["chunk_id"] for x in chunks],
     embeddings=[x["embedding"] for x in chunks],
     documents=[x["text"] for x in chunks],
