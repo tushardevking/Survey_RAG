@@ -17,4 +17,3 @@ and get answers based on your actual XML files and survey templates.
 - Sentence Transformers (embeddings)
 - LangChain (orchestration)
 
-## Project Structure
